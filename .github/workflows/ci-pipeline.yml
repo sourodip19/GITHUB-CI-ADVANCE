@@ -1,13 +1,15 @@
 name: CI PIPELINE
+
 on:
- push:
-  branches:
-   -main
+  push:
+    branches:
+      - main
 
 jobs:
- build:
-  runs-on: ubuntu-latest
-  
-  steps:
-   -uses: action/checkout@v4
-    Run: python app.py
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 app.py
+
