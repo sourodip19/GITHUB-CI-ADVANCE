@@ -1,1 +1,2 @@
-print("CI is running")
+def add(x,y):
+	return x+y
